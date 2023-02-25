@@ -2,8 +2,9 @@
 Lo prometido ya esta hecho amigos, subo esta herramienta para que generen cc la pueden extrapolar hay muchos metodos , tambien pueden generar bin en la opción 1 y copian los primeros 6 numeros y ven la info del bin en la opción 6.
 Con esto pueden ver la info del país , que pertenece el bin y lo generan en namso o en algún generador de bin a lo último de este repositorio dejare mi herramienta de generar bin
 
-#Requisitos
+#REQUISITOS
 
+- Tener python instalado y las librerias
 
 #USO
 
@@ -43,7 +44,7 @@ LAS OTRAS OPCIONES TAMBIEN SIRVEN , PARA GENERAR CC DE PAISES , TIPO DE TARGETA,
 
 *****
 
-Créador
+Créador:
 
 - zTobiCode
 
