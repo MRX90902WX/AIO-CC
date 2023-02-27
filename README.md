@@ -28,6 +28,11 @@ Les generan 6 opciones :
 
 #La sexta opción sirve para ver la info de un bin de 6 dígitos o una cc de 16 dígitos
 
+*****
+Video tutorial
+https://youtu.be/Cb3Kfnaeqd0
+*****
+
 #NOTA 
 LA SEGUNDA OPCION PUEDE SER IMPORTANTE USARLA PORQUE 
 GENERARA CC ALEATORIOS , COPIAMOS LOS ULTIMOS 10 DIGITOS DE LA CC
