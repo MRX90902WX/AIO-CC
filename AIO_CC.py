@@ -1569,11 +1569,11 @@ class Aio():
  \033[1;31m|                                                 |
  \033[1;36m# \033[1;33mGrupos de Bin WhatsApp \033[1;36m#                        \033[1;31m|
  \033[1;31m|\033[1;34m-------------------------------------------------\033[1;31m|
- \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/IITNRso0vjOGkrpuf8NsND\033[1;31m|
+ \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/BQQ9ARePQEJGz99DFz8CN8\033[1;31m|
  \033[1;31m|                                                 |
  \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/GNMiSxqHUcvAC6Oi4zSyWr\033[1;31m|
  \033[1;31m|                                                 | 
- \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/KMlTUDvIKeK0jByduQfrpZ\033[1;31m|
+ \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/IITNRso0vjOGkrpuf8NsND\033[1;31m|
  \033[1;31m|                                                 |
  \033[1;31m| \033[1;32mhttps://chat.whatsapp.com/E1eIGYtJzwRDQZlL7eOEnp\033[1;31m|
  \033[1;31m|\033[1;34m-------------------------------------------------\033[1;31m|
