@@ -2,6 +2,7 @@ import random
 import os
 import requests
 import json
+from os import system
 
 
 num = int()
@@ -1471,89 +1472,39 @@ class Aio():
 			else:
 				print("\033[1;37mCerrando . . .")
 
-		
-	def get_info():
+        def get_info():
 
-		decision = int(input("Deseas obtener informarcion de \n1.Un unico BIN/CC\n2.Obtener informarcion de un .txt\n>>> "))
-		if decision == 1:
-			ccbin = input("Digita el BIN/CC: ")
-			r = requests.get("https://bin-checker.net/api/" + ccbin)
-			json = r.json()
-			print("CC o Bin: " + str(ccbin))
-			print("MARCA: ", json["scheme"])
-			print("TIPO: ", json["type"])
-			print("NIVEL: ", json["level"])
-			country = json["country"]
-			pais = country["name"]
-			codigo = country["code"]
-			print("NOMBRE PAIS: ", pais)
-			print("CODIGO PAIS: ", codigo)
-			bank = json["bank"]
-			nombre = bank["name"]
-			sitioweb = bank["website"]
-			numero = bank["phone"]
-			print("NOMBRE BANCO: ", nombre)
-			print("SITIO WEB BANCO: ", sitioweb)
-			print("NUMERO BANCO: ", numero)
-			todo = str("CC: " + str(ccbin +
-				"\nMARCA: " + json["scheme"] + 
-				"\nTIPO: " + json["type"] + 
-				"\nNIVEL: " + json["level"] + 
-				"\nNOMBRE PAIS: " + pais + 
-				"\nCODIGO PAIS: " + codigo + 
-				"\nNOMBRE BANCO: " + nombre + 
-				"\nSITIO WEB BANCO: " + sitioweb + 
-				"\nNUMERO BANCO: " + numero + 
+                        system("setterm -foreground green")
+                        system("figlet BIN/CC")
+                        print("")
+                        ccbin = input("\033[1;31m[\033[1;33m+\033[1;31m]\033[1;37mDigita el BIN/CC: ")
+                        print("")                                                                                                                                                                        r = requests.get("https://bin-checker.net/api/" + ccbin)
+                        json = r.json()                                                                                                                                                                  print("CC o Bin: " + str(ccbin))
+                        print("MARCA: ", json["scheme"])                                                                                                                                                 print("TIPO: ", json["type"])
+                        print("NIVEL: ", json["level"])                                                                                                                                                  country = json["country"]
+                        pais = country["name"]                                                                                                                                                           codigo = country["code"]
+                        print("NOMBRE PAIS: ", pais)
+                        print("CODIGO PAIS: ", codigo)
+                        bank = json["bank"]
+                        nombre = bank["name"]
+                        sitioweb = bank["website"]
+                        numero = bank["phone"]
+                        print("NOMBRE BANCO: ", nombre)
+                        print("SITIO WEB BANCO: ", sitioweb)
+                        print("NUMERO BANCO: ", numero)
+                        todo = str("CC: " + str(ccbin +
+                                "\nMARCA: " + json["scheme"] +
+                                "\nTIPO: " + json["type"] +
+                                "\nNIVEL: " + json["level"] +
+                                "\nNOMBRE PAIS: " + pais +
+                                "\nCODIGO PAIS: " + codigo +
+                                "\nNOMBRE BANCO: " + nombre +
+                                "\nSITIO WEB BANCO: " + sitioweb +
+                                "\nNUMERO BANCO: " + numero +  
+
 				"\nººººººººººººººººººººººººººººººººººº"))
 			print(todo, file=open("CCBinInfo.txt", "a+"))
 			print("ººººººººººººººººººººººººººººººººººº")
-			print("\033[1;33mDesea continuar usando el programa \033[1;37msi/no")
-			volver = input("\033[1;37m>>> ").lower()
-			if volver == "si":
-				return Aio.modules()
-			else:
-				print("\033[1;37mCerrando . . .")
-
-		else:		
-			combo = input("Ubicacion de las CC'S o los BINS: ")
-			combo = open(combo, 'r').readlines()
-			combo = [linea.replace('\n',"") for linea in combo]
-			combo = [linea.replace('xxxxxxxxxx',"") for linea in combo]
-
-			for linea in combo:
-					datos = linea.split(':')
-					r = requests.get("https://lookup.binlist.net/" + datos[0])
-					json = r.json()
-					binn = str(linea) + "xxxxxxxxxx"
-					print("CC o Bin: " + str(binn))
-					print("MARCA: ", json["scheme"])
-					print("TIPO: ", json["type"])
-					print("NIVEL: ", json["level"])
-					country = json["country"]
-					pais = country["name"]
-					codigo = country["code"]
-					print("NOMBRE PAIS: ", pais)
-					print("CODIGO PAIS: ", codigo)
-					bank = json["bank"]
-					nombre = bank["name"]
-					sitioweb = bank["website"]
-					numero = bank["phone"]
-					print("NOMBRE BANCO: ", nombre)
-					print("SITIO WEB BANCO: ", sitioweb)
-					print("NUMERO BANCO: ", numero)
-					todo = str("CC: " + str(binn +
-						"\nMARCA: " + json["scheme"] + 
-						"\nTIPO: " + json["type"] + 
-						"\nNIVEL: " + json["level"] + 
-						"\nNOMBRE PAIS: " + pais + 
-						"\nCODIGO PAIS: " + codigo + 
-						"\nNOMBRE BANCO: " + nombre + 
-						"\nSITIO WEB BANCO: " + sitioweb + 
-						"\nNUMERO BANCO: " + numero + 
-						"\nººººººººººººººººººººººººººººººººººº"))
-					print(todo, file=open("CCInfo.txt", "a+"))
-					print("ººººººººººººººººººººººººººººººººººº")
-
 			print("\033[1;33mDesea continuar usando el programa \033[1;37msi/no")
 			volver = input("\033[1;37m>>> ").lower()
 			if volver == "si":
