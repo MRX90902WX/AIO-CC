@@ -25,7 +25,7 @@ class Aio():
 		aumentando = 1
 		cantidad = int(input("Cuantas BIN'S te gustaria generar: "))
 		while aumentando <= cantidad:
-			generador = str(random.randint(2,6)) + str(random.randint(0,9)) + str(random.randint(0,9)) + str(random.randint(0,9)) +  str(random.randint(0,9)) + str(random.randint(0,9))
+			generador = str(random.randint(4,6)) + str(random.randint(0,9)) + str(random.randint(0,9)) + str(random.randint(0,9)) +  str(random.randint(0,9)) + str(random.randint(0,9))
 			bingen = generador + "xxxxxxxxxx"
 			print(bingen)
 			aumentando += 1
