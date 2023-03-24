@@ -1610,7 +1610,7 @@ class Aio():
 		elif resp == 5:
 			Aio.cc_gen_cardtype()	
 		elif resp == 6:
-			Aio.get_info()
+			system("python info.py")
 		else:
 			print("\033[1;31mRespuesta Erronea")
 			return
