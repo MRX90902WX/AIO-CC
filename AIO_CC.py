@@ -2,7 +2,9 @@ import random
 import os
 import requests
 import json
+from os import system
 
+system("chmod 777 AIO_CC.py")
 
 num = int()
 cantidad = int()
