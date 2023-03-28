@@ -47,11 +47,10 @@ def get_info():
 
 get_info()
 
-print("")
 print(" \033[1;33mDesea continuar usando el programa \033[1;37msi/no")
 volver = input(" \033[1;37m>>> ")
 
-if volver == "si":                                                           >
+if volver == "si":
          system("python AIO_CC.py")
 else:
          exit()
