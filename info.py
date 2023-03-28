@@ -2,7 +2,6 @@ import requests
 import json
 from os import system
 print("")
-system("clear")
 
 def get_info():
                         print("  \033[1;34m__________  _______ _____________ _________")
@@ -49,9 +48,10 @@ def get_info():
 get_info()
 
 print("")
-volver = input(" \033[1;34m[\033[1;37m☆\033[1;34m]\033[1;37mContinuar info de un bin \033[1;34msi/no: \033[1;37m")
+print(" \033[1;33mDesea continuar usando el programa \033[1;37msi/no")
+volver = input(" \033[1;37m>>> ")
 
-if volver == "si":
-         system("python.info.py")
+if volver == "si":                                                           >
+         system("python AIO_CC.py")
 else:
          exit()
